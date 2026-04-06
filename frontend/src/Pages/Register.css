@@ -1,0 +1,85 @@
+.page-wrapper {
+  position: relative;
+  min-height: 100vh;
+  width: 100%;
+  overflow: hidden;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.page-wrapper::before {
+  content: "";
+  position: absolute;
+  width: 120%;   /* 👈 bigger than screen */
+  height: 120%;
+  
+  background: url('https://i.pinimg.com/736x/c1/e1/c6/c1e1c60ce2082c61cc52d2daae90f365.jpg') no-repeat center/cover;
+
+  transform: scale(0.85); /* 👈 ZOOM OUT */
+  transform-origin: center;
+
+  z-index: -1;
+}
+
+.register-card {
+ width: 350px;
+  padding: 30px;
+  border-radius: 15px;
+
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(10px);
+
+  text-align: center;
+}
+
+.register-card h2 {
+  color: #2c3e50;
+  margin-bottom: 10px;
+}
+
+.register-card p {
+  color: #7f8c8d;
+  font-size: 14px;
+  margin-bottom: 25px;
+}
+
+/* Reusing input-box styles for consistency */
+.input-box {
+  text-align: left;
+  margin-bottom: 15px;
+}
+
+.input-box label {
+  display: block;
+  font-size: 13px;
+  font-weight: 700;
+  margin-bottom: 5px;
+  color: #34495e;
+}
+
+.input-box input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  box-sizing: border-box;
+}
+
+.register-btn {
+  width: 100%;
+  padding: 14px;
+  background: #2ecc71; /* Green for "Go" / Create */
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 700;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.register-btn:hover {
+  background: #27ae60;
+}

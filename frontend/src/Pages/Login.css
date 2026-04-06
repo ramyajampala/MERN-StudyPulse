@@ -1,0 +1,99 @@
+.page-wrapper {
+  position: relative;
+  min-height: 100vh;
+  width: 100%;
+  overflow: hidden;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.page-wrapper::before {
+  content: "";
+  position: absolute;
+  width: 120%;   /* 👈 bigger than screen */
+  height: 120%;
+  
+  background: url('https://i.pinimg.com/736x/7d/41/02/7d4102d0d2296b4f1e82e95976f795fd.jpg') no-repeat center/cover;
+
+  transform: scale(0.85); /* 👈 ZOOM OUT */
+  transform-origin: center;
+
+  z-index: -1;
+}
+
+.login-container {
+  width: 350px;
+  padding: 30px;
+  border-radius: 15px;
+
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(10px);
+
+  text-align: center;
+}
+
+.login-card h2 {
+  color: #2c3e50;
+  font-size: 32px;
+  margin-bottom: 5px;
+}
+
+.login-card p {
+  color: #7f8c8d;
+  margin-bottom: 30px;
+}
+
+.input-box {
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+.input-box label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 8px;
+  color: #34495e;
+}
+
+.input-box input {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  outline: none;
+  transition: 0.3s;
+}
+
+.input-box input:focus {
+  border-color: #3498db;
+}
+
+.login-btn {
+  width: 100%;
+  padding: 14px;
+  background: #3498db;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.login-btn:hover {
+  background: #2980b9;
+}
+
+.switch-text {
+  margin-top: 20px;
+  font-size: 14px;
+}
+
+.switch-text a {
+  color: #3498db;
+  text-decoration: none;
+  font-weight: 600;
+}
