@@ -6,7 +6,7 @@ const StudySession = ({ markDayComplete }) => {
   const { state } = useLocation();
   const navigate = useNavigate();
 
-  const [timeLeft, setTimeLeft] = useState(3); 
+  const [timeLeft, setTimeLeft] = useState(7200); 
   const [isActive, setIsActive] = useState(false);
   const [sessionFinished, setSessionFinished] = useState(false);
   const [tabWarning, setTabWarning] = useState(false);
